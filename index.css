@@ -45,11 +45,20 @@ body {
 .btn-plus-ten {
   background: rgba(65, 145, 255, 1);
 }
+.btn-minus-one,
+.btn-minus-ten {
+  background: rgba(212, 137, 83, 1);
+}
 .btn-reset {
   background: rgba(212, 83, 102, 1);
 }
-.btn-plus:hover {
+.btn-plus-one:hover,
+.btn-plus-ten:hover {
   background: rgba(65, 145, 255, 0.9);
+}
+.btn-minus-one:hover,
+.btn-minus-ten:hover {
+  background: rgba(212, 137, 83, 0.9);
 }
 .btn-reset:hover {
   background: rgba(212, 83, 102, 0.9);
