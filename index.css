@@ -63,6 +63,16 @@ body {
 .btn-reset:hover {
   background: rgba(212, 83, 102, 0.9);
 }
+.bonus {
+  display: none;
+  background: rgb(212, 83, 173);
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+}
+.bonus-active {
+  display: block;
+}
 @media (max-width: 768px) {
   .container {
     width: 100%;
