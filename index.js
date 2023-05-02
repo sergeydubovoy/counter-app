@@ -4,7 +4,6 @@ let buttonMinusOne = document.querySelector(".btn-minus-one");
 let buttonMinusTen = document.querySelector(".btn-minus-ten");
 let buttonReset = document.querySelector(".btn-reset");
 let counterText = document.querySelector(".counter");
-let bonus = document.querySelector(".bonus");
 let counter = 0;
 
 buttonPlusTen.addEventListener("click", function () {
