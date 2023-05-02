@@ -26,6 +26,8 @@ body {
 }
 .counter {
   display: block;
+  font-size: 52px;
+  line-height: 64px;
 }
 .button {
   display: block;
@@ -39,7 +41,8 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
-.btn-plus {
+.btn-plus-one,
+.btn-plus-ten {
   background: rgba(65, 145, 255, 1);
 }
 .btn-reset {
