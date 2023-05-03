@@ -40,6 +40,9 @@ body {
   color: #ffffff;
   transition: 0.3s;
   cursor: pointer;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
 }
 .btn-plus-one,
 .btn-plus-ten {
