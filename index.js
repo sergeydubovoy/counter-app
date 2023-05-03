@@ -1,8 +1,8 @@
-let buttonPlusTen = document.querySelector(".btn-plus-ten");
-let buttonPlusOne = document.querySelector(".btn-plus-one");
-let buttonMinusOne = document.querySelector(".btn-minus-one");
-let buttonMinusTen = document.querySelector(".btn-minus-ten");
-let buttonReset = document.querySelector(".btn-reset");
+let buttonPlusTen = document.querySelector('[data-js="btn-plus-ten"]');
+let buttonPlusOne = document.querySelector('[data-js="btn-plus-one"]');
+let buttonMinusOne = document.querySelector('[data-js="btn-minus-one"]');
+let buttonMinusTen = document.querySelector('[data-js="btn-minus-ten"]');
+let buttonReset = document.querySelector('[data-js="btn-reset"]');
 let counterText = document.querySelector(".counter");
 let counter = 0;
 
