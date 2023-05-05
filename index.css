@@ -39,6 +39,12 @@ body {
   flex-direction: row;
   gap: 36px;
 }
+.buttons-grid_reset {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  width: 500px;
+}
 .button {
   display: block;
   width: 100%;
@@ -62,6 +68,7 @@ body {
 }
 .btn-reset {
   background: rgba(212, 83, 102, 1);
+  width: 100%;
 }
 .btn-plus:hover {
   background: rgba(65, 145, 255, 0.9);
@@ -72,12 +79,18 @@ body {
 .btn-reset:hover {
   background: rgba(212, 83, 102, 0.9);
 }
+.btn-reset-small {
+  display: block;
+  width: 70%;
+  align-items: start;
+}
 .bonus {
   display: none;
   background: rgb(212, 83, 173);
   text-decoration: none;
   text-align: center;
   line-height: 100px;
+  width: 30%;
 }
 .bonus-active {
   display: block;

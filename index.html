@@ -16,25 +16,29 @@
   <body>
     <div class="container">
       <div class="counter-wrapper">
-        <p class="counter"></p>
+        <p data-js="counter" class="counter"></p>
         <div class="buttons-wrapper">
           <div class="buttons-grid">
             <button data-js="btn-plus-ten" class="button btn-plus">+10</button>
-            <button data-js="btn-minus-ten" class="button btn-minus">-10</button>
+            <button data-js="btn-minus-ten" class="button btn-minus">
+              -10
+            </button>
           </div>
           <div class="buttons-grid">
             <button data-js="btn-plus-one" class="button btn-plus">+1</button>
             <button data-js="btn-minus-one" class="button btn-minus">-1</button>
           </div>
         </div>
-        <button data-js="btn-reset" class="button btn-reset">Сбросить</button>
-        <a
-          data-js="btn-bonus"
-          class="button bonus"
-          href="https://youtu.be/dQw4w9WgXcQ"
-          target="_blank"
-          >Бонус</a
-        >
+        <div class="buttons-grid_reset">
+          <button data-js="btn-reset" class="button btn-reset">Сбросить</button>
+          <a
+            data-js="btn-bonus"
+            class="button bonus"
+            href="https://youtu.be/dQw4w9WgXcQ"
+            target="_blank"
+            >Бонус</a
+          >
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
