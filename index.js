@@ -15,9 +15,13 @@ function updateCounter(value) {
   counter += value;
   counterText.innerText = counter;
 
-  if (counter === 100) {
+  if (counter > 100) {
     buttonReset.classList.add("btn-reset-small");
     buttonBonus.classList.add("bonus-active");
+  }
+  if (counter < 100) {
+    buttonReset.classList.remove("btn-reset-small");
+    buttonBonus.classList.remove("bonus-active");
   }
 }
 
