@@ -1,19 +1,24 @@
-.buttons-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  gap: 36px;
-}
 .buttons-grid {
   display: flex;
   flex-direction: row;
   gap: 36px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .buttons-grid {
+    width: 100%;
+  }
 }
 .buttons-grid_reset {
   display: flex;
   flex-direction: row;
   gap: 36px;
   width: 500px;
+}
+@media (max-width: 767px) {
+  .buttons-grid_reset {
+    width: 100%;
+  }
 }
 .button {
   display: block;
@@ -30,19 +35,24 @@
   font-style: normal;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
 
 .btn-plus {
   background: rgba(65, 145, 255, 1);
 }
 .btn-plus:hover {
-  background: rgba(65, 145, 255, 0.9);
+  background: rgba(65, 145, 255, 0.8);
 }
 
 .btn-minus {
   background: rgba(212, 137, 83, 1);
 }
 .btn-minus:hover {
-  background: rgba(212, 137, 83, 0.9);
+  background: rgba(212, 137, 83, 0.8);
 }
 
 .btn-reset {
@@ -50,14 +60,14 @@
   width: 100%;
 }
 .btn-reset:hover {
-  background: rgba(212, 83, 102, 0.9);
+  background: rgba(212, 83, 102, 0.8);
 }
 .btn-reset:disabled {
   background-color: grey;
   cursor: not-allowed;
 }
 
-.btn-reset-small {
+.btn-reset_small {
   display: block;
   width: 70%;
   align-items: start;

@@ -16,11 +16,11 @@ function updateCounter(value) {
   counterText.innerText = counter;
 
   if (counter > 100) {
-    buttonReset.classList.add("btn-reset-small");
+    buttonReset.classList.add("btn-reset_small");
     buttonBonus.classList.add("bonus-active");
   }
   if (counter < 100) {
-    buttonReset.classList.remove("btn-reset-small");
+    buttonReset.classList.remove("btn-reset_small");
     buttonBonus.classList.remove("bonus-active");
   }
   if (counter === 0) {
@@ -49,7 +49,7 @@ buttonMinusTen.addEventListener("click", function () {
 buttonReset.addEventListener("click", function () {
   counter = COUNTER_INITIAL_VALUE;
   counterText.innerText = counter;
-  buttonReset.classList.remove("btn-reset-small");
+  buttonReset.classList.remove("btn-reset_small");
   buttonBonus.classList.remove("bonus-active");
   buttonReset.disabled = true;
 });
