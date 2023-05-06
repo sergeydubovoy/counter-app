@@ -1,9 +1,9 @@
+const counterText = document.querySelector('[data-js="counter"]');
 const buttonPlusTen = document.querySelector('[data-js="btn-plus-ten"]');
 const buttonPlusOne = document.querySelector('[data-js="btn-plus-one"]');
 const buttonMinusOne = document.querySelector('[data-js="btn-minus-one"]');
 const buttonMinusTen = document.querySelector('[data-js="btn-minus-ten"]');
 const buttonReset = document.querySelector('[data-js="btn-reset"]');
-const counterText = document.querySelector('[data-js="counter"]');
 const buttonBonus = document.querySelector('[data-js="btn-bonus"]');
 
 const COUNTER_INITIAL_VALUE = 0;
@@ -22,6 +22,11 @@ function updateCounter(value) {
   if (counter < 100) {
     buttonReset.classList.remove("btn-reset-small");
     buttonBonus.classList.remove("bonus-active");
+  }
+  if (counter === 0) {
+    buttonReset.disabled = true;
+  } else {
+    buttonReset.disabled = false;
   }
 }
 
@@ -46,4 +51,5 @@ buttonReset.addEventListener("click", function () {
   counterText.innerText = counter;
   buttonReset.classList.remove("btn-reset-small");
   buttonBonus.classList.remove("bonus-active");
+  buttonReset.disabled = true;
 });
